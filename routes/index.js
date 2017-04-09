@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/apps', function (req, res, next) {
-  res.send('Hello World this is apps page !!!')
+  res.render('apps', { title: 'the apps page' })
 })
 
 module.exports = router;
