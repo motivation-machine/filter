@@ -2,8 +2,13 @@ language: node_js
 
 build:
   ci:
-    - docker build -t="scriptnull/mm-filter:$BRANCH_NAME.$BUILD_NUMBER" .
-    - docker push scriptnull/mm-filter:$BRANCH_NAME.$BUILD_NUMBER
+    - docker build -t="scriptnull/mm-filter:$BRANCH.$BUILD_NUMBER" .
+    - docker push scriptnull/mm-filter:$BRANCH.$BUILD_NUMBER
+
+integrations:
+  hub:
+    - integrationName: scriptnull-docker
+      type: docker
 
 # integrations:
 #   key:
