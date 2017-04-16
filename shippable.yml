@@ -7,7 +7,7 @@ build:
 
 integrations:
   hub:
-    - integrationName: scriptnull-docker
+    - integrationName: Vishnu's Docker
       type: docker
 
 # integrations:
