@@ -1,0 +1,11 @@
+language: node_js
+
+build:
+  ci:
+    - docker build -t="scriptnull/mm-filter:$BRANCH_NAME.$BUILD_NUMBER" .
+    - docker push scriptnull/mm-filter:$BRANCH_NAME.$BUILD_NUMBER
+
+# integrations:
+#   key:
+#     - integrationName: mm-keys
+#       type: ssh-key
