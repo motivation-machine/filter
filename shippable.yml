@@ -5,6 +5,7 @@ build:
     - docker build -t="scriptnull/mm-filter:$BRANCH.$BUILD_NUMBER" .
     - docker push scriptnull/mm-filter:$BRANCH.$BUILD_NUMBER
     - ssh ubuntu@34.209.45.202 echo "hello world"
+    - ssh ubuntu@34.209.45.202 docker pull scriptnull/mm-filter:$BRANCH.$BUILD_NUMBER
 
 integrations:
   hub:
