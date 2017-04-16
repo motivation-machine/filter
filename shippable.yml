@@ -4,13 +4,13 @@ build:
   ci:
     - docker build -t="scriptnull/mm-filter:$BRANCH.$BUILD_NUMBER" .
     - docker push scriptnull/mm-filter:$BRANCH.$BUILD_NUMBER
+    - ssh ubuntu@34.209.45.202 echo "hello world"
 
 integrations:
   hub:
     - integrationName: Vishnu's Docker
       type: docker
 
-# integrations:
-#   key:
-#     - integrationName: mm-keys
-#       type: ssh-key
+  key:
+    - integrationName: motivation-machine
+      type: ssh-key
