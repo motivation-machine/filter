@@ -14,7 +14,7 @@
     <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
     <script type="text/babel">
 
-    function Testimage(props){
+    function ImagePost(props){
         return <div id="container"> <img src = {props.imageUrl} />
         <br/>
         <button id="reject">NO</button>
@@ -25,7 +25,7 @@
     function Filterapp(){
       return(
         <div>
-        <Testimage imageUrl="https://unsplash.it/450/450/?random" />
+        <ImagePost imageUrl="https://unsplash.it/450/450/?random" />
         </div>
       );
     }
