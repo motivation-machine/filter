@@ -33,10 +33,11 @@
         </div>
     }
 
-    function Filterapp(){
+    function Filterapp(props){
+      console.log("from inside of FilterApp "+data)
       return(
         <div>
-        <ImagePost imageUrl="https://unsplash.it/450/450/?random" />
+          <ImagePost imageUrl="https://unsplash.it/450/450/?random" />
         </div>
       );
     }
