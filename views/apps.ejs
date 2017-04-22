@@ -38,13 +38,14 @@
       var result = [];
       for(var i = 0; i <= data.length-1; i++){
         console.log("Printing data "+i+" : "+data[i].imageUrl);
-        result.push(data[i].imageUrl);
+        result.push(<ImagePost imageUrl={data[i].imageUrl} />);
+        //result.push(<"ImagePost imageUrl={"+data[i].imageUrl+"} />");
         console.log("Printing result"+i+" : "+result[i]);
       }
 
       return(
         <div>
-          <ImagePost imageUrl="https://unsplash.it/450/450/?random" />
+          {result}
         </div>
       );
     }
